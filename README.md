@@ -1,6 +1,7 @@
 Analisis Data Karyawan Perusahaan Asuransi (Proyek Akhir)
 
 Latar Belakang
+
 Proyek ini merupakan analisis data eksplorasi (EDA) terhadap data karyawan sebuah perusahaan asuransi. Tujuannya adalah untuk menemukan wawasan (insights) penting terkait faktor-faktor yang memengaruhi aspek-aspek kunci karyawan, seperti kompensasi, kinerja, dan karakteristik demografis. Analisis ini dilakukan oleh kelompok mahasiswa sebagai bagian dari proyek akhir mereka.
 
 Tim Penyusun 
@@ -47,4 +48,5 @@ Usia (Age): Rata-rata usia mereka sedikit lebih tinggi, yang sejalan dengan peng
 Kenaikan Gaji (Percent Salary Hike): Menariknya, persentase kenaikan gaji tahunan mereka rata-rata sedikit lebih tinggi (15.4%) dibandingkan kelompok lain (14.8%), yang mungkin mencerminkan penghargaan atas kinerja dan nilai strategis mereka.
 
 Kesimpulan
+
 Analisis ini memberikan beberapa wawasan kunci bagi manajemen sumber daya manusia. Faktor-faktor seperti tingkat jabatan, pengalaman, dan frekuensi perjalanan bisnis memiliki korelasi kuat dengan tingkat pendapatan. Selain itu, kebijakan terkait lembur mungkin perlu ditinjau untuk memastikan efektivitasnya terhadap kinerja karyawan secara keseluruhan.
