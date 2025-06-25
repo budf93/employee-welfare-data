@@ -1,4 +1,4 @@
-Analisis Data Karyawan Perusahaan Asuransi (Proyek Akhir)
+Analisis Data Karyawan Perusahaan (Proyek Akhir)
 
 Latar Belakang
 
