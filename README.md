@@ -1,8 +1,10 @@
 Analisis Data Karyawan Perusahaan Asuransi (Proyek Akhir)
+
 Latar Belakang
 Proyek ini merupakan analisis data eksplorasi (EDA) terhadap data karyawan sebuah perusahaan asuransi. Tujuannya adalah untuk menemukan wawasan (insights) penting terkait faktor-faktor yang memengaruhi aspek-aspek kunci karyawan, seperti kompensasi, kinerja, dan karakteristik demografis. Analisis ini dilakukan oleh kelompok mahasiswa sebagai bagian dari proyek akhir mereka.
 
-Tim Penyusun
+Tim Penyusun 
+
 Fikri Budianto (2206025306)
 
 Khansa Mahira (2206819413)
@@ -12,6 +14,7 @@ Dian Fathur Rahman (2206082096)
 Gilang Fajar Pratama (2206082631)
 
 Wawasan Utama (Key Insights)
+
 Berdasarkan analisis data yang telah dilakukan, ditemukan tiga wawasan utama:
 
 1. Hubungan Gaji dengan Frekuensi Perjalanan Bisnis
