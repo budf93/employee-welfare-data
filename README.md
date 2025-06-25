@@ -1,52 +1,58 @@
-Analisis Data Karyawan Perusahaan (Proyek Akhir)
+Analisis Data Kesejahteraan dan Retensi Karyawan
+Proyek ini bertujuan untuk melakukan analisis mendalam terhadap dataset kesejahteraan karyawan yang berisi lebih dari 9.000 catatan. Tujuan utamanya adalah untuk mengidentifikasi faktor-faktor kunci yang memengaruhi kompensasi, atrisi (perpindahan karyawan), dan kepuasan kerja. Wawasan yang dihasilkan dari analisis ini dapat digunakan sebagai dasar pengambilan keputusan strategis dalam manajemen sumber daya manusia.
 
-Latar Belakang
+🎯 Tujuan Analisis
+Mengidentifikasi Pendorong Utama Atrisi: Memahami mengapa karyawan memutuskan untuk meninggalkan perusahaan.
 
-Proyek ini merupakan analisis data eksplorasi (EDA) terhadap data karyawan sebuah perusahaan. Tujuannya adalah untuk menemukan wawasan (insights) penting terkait faktor-faktor yang memengaruhi aspek-aspek kunci karyawan, seperti kompensasi, kinerja, dan karakteristik demografis. Analisis ini dilakukan oleh kelompok mahasiswa sebagai bagian dari proyek akhir mereka.
+Menganalisis Faktor Kompensasi: Menentukan variabel apa yang paling signifikan memengaruhi pendapatan bulanan karyawan.
 
-Tim Penyusun 
+Melakukan Segmentasi Karyawan: Mengelompokkan karyawan ke dalam beberapa profil berbeda untuk strategi manajemen talenta yang lebih tertarget.
 
-Fikri Budianto (2206025306)
+🔑 Temuan Utama dari Analisis
+Berdasarkan Exploratory Data Analysis (EDA) dan pemodelan yang telah dilakukan, berikut adalah beberapa temuan kunci:
 
-Khansa Mahira (2206819413)
+1. Faktor-Faktor Pendorong Atrisi Karyawan
+Model prediktif yang dibangun berhasil mengidentifikasi beberapa faktor yang secara signifikan meningkatkan kemungkinan seorang karyawan untuk keluar:
 
-Dian Fathur Rahman (2206082096)
+Lembur (OverTime): Karyawan yang sering bekerja lembur memiliki kecenderungan lebih tinggi untuk meninggalkan perusahaan. Ini bisa menjadi indikator beban kerja yang tidak seimbang atau burnout.
 
-Gilang Fajar Pratama (2206082631)
+Tingkat Pekerjaan (JobLevel): Karyawan pada level jabatan yang lebih rendah menunjukkan tingkat atrisi yang lebih tinggi, menandakan kemungkinan adanya keterbatasan dalam jalur karir atau kompensasi di level awal.
 
-Wawasan Utama (Key Insights)
+Status Pernikahan (MaritalStatus): Karyawan dengan status lajang (Single) memiliki tingkat atrisi yang lebih tinggi dibandingkan dengan yang sudah menikah atau bercerai.
 
-Berdasarkan analisis data yang telah dilakukan, ditemukan tiga wawasan utama:
+Departemen: Terdapat beberapa departemen, seperti Human Resources dan Technical Degree, yang menunjukkan tingkat atrisi yang lebih tinggi dibandingkan departemen lain.
 
-1. Hubungan Gaji dengan Frekuensi Perjalanan Bisnis
-Pertanyaan: Apakah karyawan yang jarang melakukan perjalanan bisnis mendapatkan gaji lebih tinggi?
+2. Penentu Utama Kompensasi Karyawan
+Analisis regresi untuk memprediksi pendapatan bulanan (MonthlyIncome) menunjukkan bahwa:
 
-Temuan: Ya, karyawan dengan kategori perjalanan "Travel_Rarely" dan "Non-Travel" cenderung memiliki gaji bulanan (baik median maupun rata-rata) yang lebih tinggi dibandingkan dengan karyawan yang sering melakukan perjalanan bisnis ("Travel_Frequently").
+Tingkat Pekerjaan (JobLevel): Merupakan faktor paling dominan dalam menentukan besaran gaji. Kenaikan level jabatan secara langsung berkorelasi positif dengan kenaikan pendapatan yang signifikan.
 
-Implikasi: Hal ini bisa mengindikasikan bahwa posisi yang lebih senior, strategis, atau teknis yang tidak memerlukan mobilitas tinggi mungkin mendapatkan kompensasi yang lebih besar. Sebaliknya, peran yang membutuhkan perjalanan sering mungkin berada di level operasional atau penjualan lapangan.
+Total Pengalaman Kerja (TotalWorkingYears): Pengalaman kerja yang lebih lama juga berkontribusi positif terhadap pendapatan bulanan, meskipun pengaruhnya tidak sebesar level jabatan.
 
-2. Pengaruh Lembur terhadap Kinerja Karyawan
-Pertanyaan: Apakah karyawan yang bekerja lembur (overtime) memiliki kinerja yang lebih baik?
+3. Segmentasi Profil Karyawan (Clustering)
+Dengan menggunakan K-Means Clustering, kami berhasil mengidentifikasi 3 profil atau segmen karyawan yang berbeda:
 
-Temuan: Tidak secara langsung. Analisis menunjukkan bahwa kelompok yang tidak bekerja lembur justru memiliki persentase kinerja "Excellent" yang lebih tinggi (92.8%) dibandingkan kelompok yang lembur (81.1%). Namun, untuk kinerja tertinggi ("Outstanding"), kelompok yang bekerja lembur memiliki persentase yang lebih tinggi (17.2%) dibandingkan yang tidak (5.1%).
+Cluster 0: Karyawan Junior & Berkembang
 
-Implikasi: Bekerja lembur tidak menjamin kinerja yang lebih baik secara keseluruhan dan bahkan bisa berkorelasi dengan kinerja yang sedikit lebih rendah di kategori "Excellent". Namun, lembur mungkin terkait dengan proyek atau tugas mendesak yang hasilnya bisa dinilai "Outstanding".
+Karakteristik: Pendapatan bulanan dan level jabatan relatif rendah, namun memiliki persentase kenaikan gaji (PercentSalaryHike) yang cenderung moderat hingga tinggi.
 
-3. Ciri-Ciri Karyawan dengan Pendapatan Tinggi
-Pertanyaan: Apa saja karakteristik yang menonjol dari karyawan dengan pendapatan tinggi (didefinisikan sebagai kuartil teratas)?
+Interpretasi: Segmen ini kemungkinan besar diisi oleh karyawan pada tahap awal karir yang menunjukkan potensi dan kinerja baik, sehingga mendapatkan kenaikan gaji yang kompetitif sebagai bentuk apresiasi.
 
-Temuan: Karyawan dengan pendapatan tinggi (di atas ~$15,786 per bulan dalam dataset ini) menunjukkan beberapa ciri khas yang membedakan mereka:
+Cluster 1: Karyawan Senior & Stabil
 
-Tingkat Jabatan (Job Level): Memiliki JobLevel yang secara signifikan lebih tinggi. Ini adalah prediktor terkuat.
+Karakteristik: Memiliki pendapatan bulanan dan level jabatan tertinggi di antara semua segmen.
 
-Pengalaman Kerja (Total Working Years): Cenderung memiliki total masa kerja yang lebih lama.
+Interpretasi: Ini adalah para karyawan senior, manajer, atau eksekutif yang menjadi tulang punggung perusahaan. Mereka memiliki kompensasi yang sangat baik dan merupakan aset penting untuk dipertahankan.
 
-Masa Kerja di Perusahaan (Years At Company): Telah mengabdi lebih lama di perusahaan saat ini.
+Cluster 2: Karyawan Berisiko (At-Risk)
 
-Usia (Age): Rata-rata usia mereka sedikit lebih tinggi, yang sejalan dengan pengalaman kerja yang lebih banyak.
+Karakteristik: Pendapatan bulanan, level jabatan, dan persentase kenaikan gaji semuanya berada pada level terendah.
 
-Kenaikan Gaji (Percent Salary Hike): Menariknya, persentase kenaikan gaji tahunan mereka rata-rata sedikit lebih tinggi (15.4%) dibandingkan kelompok lain (14.8%), yang mungkin mencerminkan penghargaan atas kinerja dan nilai strategis mereka.
+Interpretasi: Karyawan di segmen ini adalah yang paling rentan untuk keluar. Mereka mungkin merasa kurang dihargai karena kompensasi dan pertumbuhan karir yang stagnan. Segmen ini memerlukan perhatian khusus dari manajemen.
 
-Kesimpulan
+🛠️ Teknologi yang Digunakan
+Bahasa Pemrograman: Python
 
-Analisis ini memberikan beberapa wawasan kunci bagi manajemen sumber daya manusia. Faktor-faktor seperti tingkat jabatan, pengalaman, dan frekuensi perjalanan bisnis memiliki korelasi kuat dengan tingkat pendapatan. Selain itu, kebijakan terkait lembur mungkin perlu ditinjau untuk memastikan efektivitasnya terhadap kinerja karyawan secara keseluruhan.
+Library Analisis Data: Pandas, NumPy, Matplotlib, Seaborn
+
+Library Machine Learning: Scikit-learn
