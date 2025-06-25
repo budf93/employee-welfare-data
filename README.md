@@ -2,7 +2,7 @@ Analisis Data Karyawan Perusahaan (Proyek Akhir)
 
 Latar Belakang
 
-Proyek ini merupakan analisis data eksplorasi (EDA) terhadap data karyawan sebuah perusahaan asuransi. Tujuannya adalah untuk menemukan wawasan (insights) penting terkait faktor-faktor yang memengaruhi aspek-aspek kunci karyawan, seperti kompensasi, kinerja, dan karakteristik demografis. Analisis ini dilakukan oleh kelompok mahasiswa sebagai bagian dari proyek akhir mereka.
+Proyek ini merupakan analisis data eksplorasi (EDA) terhadap data karyawan sebuah perusahaan. Tujuannya adalah untuk menemukan wawasan (insights) penting terkait faktor-faktor yang memengaruhi aspek-aspek kunci karyawan, seperti kompensasi, kinerja, dan karakteristik demografis. Analisis ini dilakukan oleh kelompok mahasiswa sebagai bagian dari proyek akhir mereka.
 
 Tim Penyusun 
 
