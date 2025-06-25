@@ -1,4 +1,5 @@
 Analisis Data Kesejahteraan dan Retensi Karyawan
+
 Proyek ini bertujuan untuk melakukan analisis mendalam terhadap dataset kesejahteraan karyawan yang berisi lebih dari 9.000 catatan. Tujuan utamanya adalah untuk mengidentifikasi faktor-faktor kunci yang memengaruhi kompensasi, atrisi (perpindahan karyawan), dan kepuasan kerja. Wawasan yang dihasilkan dari analisis ini dapat digunakan sebagai dasar pengambilan keputusan strategis dalam manajemen sumber daya manusia.
 
 🎯 Tujuan Analisis
